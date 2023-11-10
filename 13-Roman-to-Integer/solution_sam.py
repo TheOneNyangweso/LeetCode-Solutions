@@ -11,6 +11,14 @@ class Solution:
 
         res = 0
         count = 0
+
+        # Best solution though...
+        # s = s.replace("IV", "IIII").replace("IX", "VIIII")
+        # s = s.replace("XL", "XXXX").replace("XC", "LXXXX")
+        # s = s.replace("CD", "CCCC").replace("CM", "DCCCC")
+        # for char in s:
+        #   res += roman_rep[char]
+
         while count < len(l):
             print(res)
             try:
