@@ -5,9 +5,7 @@ class Solution:
         
         for letter in first_val:
             for s in strs:
-                if s.startswith(res + letter):
-                    continue
-                else:
+                if s.startswith(res + letter) == False:
                     return res
             res += letter
 
