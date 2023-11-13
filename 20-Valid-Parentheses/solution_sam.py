@@ -7,7 +7,7 @@ class Solution:
             ')': '(',
             ']': '['}
         
-        if len(s) % 2 != 0:
+        if sum([1 for b in s if b in "{[("]) != sum([1 for b in s if b in "}])"]):
             return False
         
         for pos, val in enumerate(s):
@@ -19,7 +19,7 @@ class Solution:
                     tmp.pop()
                 else:
                     return False  
-        print(count)            
+        
         if tmp:
             return False
         elif not tmp and count == 0:
